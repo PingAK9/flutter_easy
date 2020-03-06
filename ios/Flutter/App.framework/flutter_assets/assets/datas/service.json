@@ -1,0 +1,72 @@
+{
+  "status": "success",
+  "data": {
+    "title": "Khám và xét nghiệm máy tổng quát đặc biệt",
+    "description": "Kiểm tra sức khoẻ cơ bản thông qua các xét nghiệm thường quy, điện tim và X-quang phổi, dành cho người trưởng thành từ 18 tuổi trở lên có nhu cầu đánh giá sức khoẻ định kỳ.",
+    "price": 1690000,
+    "image": "assets/images/banner/doctor-banner.jpeg",
+    "gender": "Nam & Nữ",
+    "age": "Mọi lứa tuổi",
+    "bloodTest": [
+      {
+        "title": "Tổng phân tích tế bào máu",
+        "description": "Phát hiện các bệnh lý về máu và cơ quan tạo máu như thiếu máu, suy tủy, ung thư máu, sốt do nhiễm trùng, sốt do virus,..."
+      },
+      {
+        "title": "Glucose",
+        "description": "Chẩn đoán bệnh đái tháo đường, theo dõi điều trị bệnh nhân đái tháo đường, hạ đường huyết... "
+      },
+      {
+        "title": "AST (SGOT), ALT (SGPT), GGT",
+        "description": "Kiểm tra các bất thường và các bệnh về gan như viêm gan cấp, mãn, tổn thương nhu mô gan… "
+      },
+      {
+        "title": "Urea, Creatinine",
+        "description": "Bệnh lý về thận như thiểu năng thận, viêm cầu thận cấp, mãn, tắc mật, sỏi mật… 5. Cholesterol, Triglyceride, HDL-c, LDL-c: Phát hiện hội chứng rối loạn chuyển hóa Lipid, nguy cơ xơ vữa động mạch, tăng huyết áp, nhồi máu cơ tim, thận hư nhiễm mỡ… "
+      },
+      {
+        "title": " Acid uric",
+        "description": "Tầm soát bệnh Gout "
+      },
+      {
+        "title": " HBsAg/HbsAb",
+        "description": "Kiểm tra kháng nguyên/kháng thể Viêm Gan B 8. Tổng phân tích nước tiểu: Phát hiện các bệnh đái tháo đường, đái tháo nhạt, nhiễm toan ceton, bệnh gan, thận, bệnh viêm tắc đường tiết niệu, tiểu máu,…, phát hiện sớm ngộ độc thai nghén,..."
+      }
+    ],
+    "benefits": [
+      {
+        "icon": "service-0.png",
+        "title": "Dể dàng đặt lịch xét nghiệm",
+        "description": "Dể dàng đặt lịch xét nghiệm <strong>chỉ trong vòng 8h</strong>"
+      },
+      {
+        "icon": "service-1.png",
+        "title": "Kết quả xét nghiệm nhanh",
+        "description": "Kết quả xét nghiệm được cập nhật <strong>trong vòng 24h</strong> ngay trên điện thoại và <strong>hoàn toàn bảo mật</strong>"
+      },
+      {
+        "icon": "service-2.png",
+        "title": "Bác sĩ tư vấn online miễn phí",
+        "description": "Đội ngủ bác sĩ tận tâm <strong>hỗ trợ tư vấn nhanh nhất</strong> ngay sau khi có kết quả"
+      }
+    ],
+    "process": [
+      "Bệnh nhân chọn gói dịch vụ và tiến hành đặt lịch hẹn ngay trên ứng dụng M.E.C.",
+      "Điều dưỡng M.E.C xác nhận và đến tận nhà để lấy mẫu xét nghiệm, chuyển về Trung tâm xét nghiệm để thực hiện tổng phân tích.",
+      "Kết quả được gửi riêng đến tài khoản của bệnh nhân trên hệ thống M.E.C.",
+      "Bệnh nhân tùy chọn Bác sĩ để được tư vấn kết quả xét nghiệm và kê toa thuốc (nếu có)."
+    ],
+    "notices": [
+      "Nên thực hiện lấy máu xét nghiệm vào buổi sáng.",
+      "Nhịn ăn 8-12 tiếng trước khi lấy máu xét nghiệm, chỉ uống nước lọc.",
+      "Không ăn các thực phẩm có chứa đường hay uống nước ngọt, sữa,...; tránh dùng các chất kích thích như bia, rượu, caffein,...để đảm bảo kết quả xét nghiệm chính xác.",
+      "Giữ tâm lý thoải mái, tránh căng thẳng, thức khuya,..."
+    ],
+    "feature": [
+      "Tổng phân tích tế bào máu; tổng phân tích nước tiểu.",
+      "Xét nghiệm đường máu; Mỡ máu; Kiểm tra chức năng gan, thận; Tầm soát bện gout; Chức năng tuyến giám.",
+      "Kiểm tra viêm gan B, C",
+      "Xét nghiệm 6 dấu ấn ung thư và xét nghiệm vi khẩn HP"
+    ]
+  }
+}
