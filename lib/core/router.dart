@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_easy/demo/animation/flare/flare_demo.dart';
 import 'package:flutter_easy/pages/home_page.dart';
 
 class Router {
@@ -8,6 +9,9 @@ class Router {
       case '/':
         return MaterialPageRoute(
             builder: (_) => HomePage(), settings: settings);
+      case '/flare':
+        return MaterialPageRoute(
+            builder: (_) => FlareDemo(), settings: settings);
       default:
         return MaterialPageRoute(
             builder: (_) => Scaffold(

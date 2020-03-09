@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_easy/demo/animation/pumping_icon/pumping_icon.dart';
 import 'package:flutter_easy/pages/fancy_bottom_navigation/fancy_bottom_navigation_item.dart';
 
 class FancyBottomNavigation extends StatefulWidget {
@@ -75,34 +76,41 @@ class _FancyBottomNavigationState extends State<FancyBottomNavigation> {
     return AnimatedContainer(
       width: isSelected ? 124 : 50,
       height: double.maxFinite,
-      duration: Duration(milliseconds: 250),
-      padding: EdgeInsets.fromLTRB(12, 8, 12, 8),
+      duration: const Duration(milliseconds: 250),
+      padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
       decoration: !isSelected
           ? null
           : BoxDecoration(
               color: _activeColor,
-              borderRadius: BorderRadius.all(Radius.circular(50)),
+              borderRadius: const BorderRadius.all(Radius.circular(50)),
             ),
       child: ListView(
         shrinkWrap: true,
-        padding: EdgeInsets.all(0),
-        physics: NeverScrollableScrollPhysics(),
+        padding: const EdgeInsets.all(0),
+        physics: const NeverScrollableScrollPhysics(),
         scrollDirection: Axis.horizontal,
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.only(right: 8),
-            child: Icon(
-              item.icon,
-              size: widget.iconSize,
-              color: isSelected ? _backgroundColor : widget.inactiveColor,
-            ),
+            padding: const EdgeInsets.only(right: 8),
+            child: isSelected
+                ? PumpingIcon(
+                    item.icon,
+                    size: widget.iconSize,
+                    color: _backgroundColor,
+                  )
+                : Icon(
+                    item.icon,
+                    size: widget.iconSize,
+                    color: widget.inactiveColor,
+                  ),
           ),
-          isSelected
-              ? Center(child: Text(
-            item.title,
-            style: TextStyle(color: _backgroundColor),
-          ),)
-              : SizedBox.shrink(),
+          if (isSelected)
+            Center(
+              child: Text(
+                item.title,
+                style: TextStyle(color: _backgroundColor),
+              ),
+            ),
         ],
       ),
     );

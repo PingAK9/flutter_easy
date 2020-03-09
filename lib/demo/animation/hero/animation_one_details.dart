@@ -2,10 +2,12 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 
 class AnimationOneDetails extends StatelessWidget {
-  const AnimationOneDetails({Key key, this.index, this.image, this.dummy}) : super(key: key);
+  const AnimationOneDetails({Key key, this.index, this.image, this.dummy})
+      : super(key: key);
   final int index;
-final String image;
-final Map dummy;
+  final String image;
+  final Map dummy;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,8 +15,7 @@ final Map dummy;
         fit: StackFit.expand,
         children: <Widget>[
           Hero(
-              tag: "image$index",
-              child: Image.asset(image, fit: BoxFit.cover)),
+              tag: "image$index", child: Image.asset(image, fit: BoxFit.cover)),
           Container(
             padding: const EdgeInsets.all(16),
             width: double.infinity,
@@ -22,7 +23,7 @@ final Map dummy;
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-               const SizedBox(height: 20.0),
+                const SizedBox(height: 20.0),
                 IconButton(
                   color: Colors.white,
                   icon: Icon(

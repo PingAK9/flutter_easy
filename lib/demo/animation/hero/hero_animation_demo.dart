@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_easy/demo/hero_animation/animation_one_details.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'animation_one_details.dart';
 
 class HeroAnimationDemo extends StatefulWidget {
   @override

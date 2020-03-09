@@ -4,7 +4,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_easy/core/config.dart';
 import 'package:flutter_easy/demo/account_profile.dart';
-import 'package:flutter_easy/demo/hero_animation/hero_animation_demo.dart';
+import 'package:flutter_easy/demo/animation/hero/hero_animation_demo.dart';
 import 'package:flutter_easy/demo/scan/scan_view.dart';
 import 'package:flutter_easy/demo/service/service_detail_view.dart';
 import 'package:flutter_easy/pages/block/block_pattern.dart';

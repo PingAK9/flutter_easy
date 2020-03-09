@@ -35,11 +35,11 @@ class _HomePageState extends State<HomePage> {
         onItemSelected: _onItemTapped,
         items: [
           FancyBottomNavigationItem(
-              icon: Icons.home, title: 'Fancy Ab'),
+              icon: Icons.home, title: 'Home'),
           FancyBottomNavigationItem(
-              icon: Icons.calendar_view_day, title: 'Sliver Ab'),
+              icon: Icons.calendar_view_day, title: 'Menu'),
           FancyBottomNavigationItem(
-              icon: Icons.collections_bookmark, title: 'Container'),
+              icon: Icons.collections_bookmark, title: 'Category'),
           FancyBottomNavigationItem(
             icon: Icons.info_outline,
             title: 'Information',

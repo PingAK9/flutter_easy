@@ -1,8 +1,13 @@
 import 'dart:ui';
 
+import 'package:flare_flutter/asset_provider.dart';
+import 'package:flare_flutter/flare_actor.dart';
+import 'package:flare_flutter/flare_cache_builder.dart';
+import 'package:flare_flutter/provider/asset_flare.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_easy/core/config.dart';
-import 'package:flutter_easy/demo/scan/scan_view.dart';
+import 'package:flutter_easy/demo/animation/flare/flare_loop.dart';
 import 'package:flutter_easy/pages/block/block_shadow.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
@@ -53,26 +58,43 @@ class HomeNavigation extends StatelessWidget {
                 RoundedButton(
                   title: 'Wallet',
                   onItemTapped: () {},
-                  icon: Entypo.wallet,
-                  color: Colors.yellow,
+                  icon: Icon(
+                    Entypo.wallet,
+                    size: 28,
+                    color: Colors.white,
+                  ),
+                  color: Colors.lightBlueAccent,
                 ),
                 RoundedButton(
                   title: 'Scanner',
-                  onItemTapped: () {
-                  },
-                  icon: MaterialCommunityIcons.barcode_scan,
-                  color: Colors.lightBlueAccent,
+                  onItemTapped: () {},
+                  icon: const Padding(
+                    padding: EdgeInsets.all(2.0),
+                    child: FlareLoop(
+                      'assets/anims/scan.flr',
+                      animation: "scan",
+                    ),
+                  ),
+                  color: Colors.yellow[300],
                 ),
                 RoundedButton(
                   title: 'My Voucher',
                   onItemTapped: () {},
-                  icon: MaterialCommunityIcons.ticket_percent,
+                  icon: Icon(
+                    MaterialCommunityIcons.ticket_percent,
+                    size: 26,
+                    color: Colors.white,
+                  ),
                   color: Colors.redAccent,
                 ),
                 RoundedButton(
                   title: 'My pocket',
                   onItemTapped: () {},
-                  icon: FontAwesome.shopping_basket,
+                  icon: Icon(
+                    FontAwesome.shopping_basket,
+                    size: 24,
+                    color: Colors.white,
+                  ),
                   color: Colors.orange,
                 ),
               ],
@@ -93,7 +115,7 @@ class RoundedButton extends StatelessWidget {
   });
 
   final String title;
-  final IconData icon;
+  final Widget icon;
   final Color color;
   final GestureTapCallback onItemTapped;
 
@@ -114,11 +136,7 @@ class RoundedButton extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 alignment: Alignment.center,
-                child: Icon(
-                  icon,
-                  color: Colors.white,
-                  size: 26,
-                )),
+                child: icon),
             const SizedBox(height: 10),
             Text(
               title,
